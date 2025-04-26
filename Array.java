@@ -31,13 +31,36 @@ public class Array {
 
             for (int i = 0; i< 3; i++) {
                 for(int j = 0; j < 3; j++) {
-                    System.out.print(arr[i][j] + " ");
+                   System.out.print(arr[i][j] + " ");
                 }
                 System.out.println();
             }
 
 
+            //............Reversing Array..........
+System.out.println("Original Array: ");
+        int [] array = {1,2,3,4,5};
+            for( int num : array){
+                System.out.print(num + " ");
+            }
 
 
-    }
+            int start  = 0;
+            int end = array.length - 1;
+
+            while (start < end){
+                int temp = array[start];
+                array[start] = array[end];
+                array[end] = temp;
+
+                start ++;
+                end--;
+            }
+              System.out.println("\nReversed Array: ");
+              for(int num :array){
+                      System.out.print(num + " ");
+              }
+
+
+        }
 }
