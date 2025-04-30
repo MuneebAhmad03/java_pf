@@ -21,11 +21,11 @@ public class guess_game {
             attempts++;
 
             if (guess < numberToGuess) {
-                System.out.println("Too low Guess again ");
+                System.out.println("Too low Guess again. ");
             } else if (guess > numberToGuess) {
-                System.out.println("Too high Guess again ");
+                System.out.println("Too high Guess again. ");
             } else {
-                System.out.println("Congratulations you find the correct number");
+                System.out.println("Congratulations you find the correct number : " + guess);
                 System.out.println("Total number of attempts are : " + attempts);
             }
 
