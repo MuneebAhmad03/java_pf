@@ -1,14 +1,15 @@
 import java.util.Scanner;
+
 public class Reverse_Sort_Search {
     public static void main(String[]args){
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter the number of Elements: ");
+        System.out.print("Enter the number of Integers: ");
         int size = input.nextInt();
         int [] arr = new int [size];
 
-        System.out.println("Enter " + size + " of Elements. ");
+        System.out.println("Enter " + size + " of integers. ");
         for (int i = 0; i < size ; i++){
             arr[i] = input.nextInt();
         }
@@ -33,7 +34,7 @@ public class Reverse_Sort_Search {
                 System.out.println();
 
             } else if (choice == 2) {
-                // Sort in ascending order using bubble sort
+
                 for (int i = 0; i < size - 1; i++) {
                     for (int j = 0; j < size - 1 - i; j++) {
                         if (arr[j] > arr[j + 1]) {
@@ -50,7 +51,7 @@ public class Reverse_Sort_Search {
                 System.out.println();
 
             } else if (choice == 3) {
-                // Sort in descending order using bubble sort
+
                 for (int i = 0; i < size - 1; i++) {
                     for (int j = 0; j < size - 1 - i; j++) {
                         if (arr[j] < arr[j + 1]) {
@@ -83,17 +84,12 @@ public class Reverse_Sort_Search {
                 }
 
             } else if (choice == 5) {
-                System.out.println("Goodbye!");
+                System.out.println("Goodbye!..Exiting");
             } else {
                 System.out.println("Invalid choice. Try again.");
             }
 
         } while (choice != 5);
-
-        input.close();
-
-
-
 
     }
 
